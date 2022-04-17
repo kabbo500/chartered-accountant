@@ -1,0 +1,15 @@
+.name h1 {
+    color: rgb(224, 123, 7);
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-top: 3.5rem;
+}
+
+.name p {
+    color: wheat;
+}
+
+.name h2 {
+    color: darksalmon;
+    margin-top: 0px;
+}
