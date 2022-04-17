@@ -4,6 +4,7 @@ import './Register.css'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 
 import auth from '../../../firebase.init';
+import GoogleLogin from '../Login/GoogleLogin/GoogleLogin';
 const Register = () => {
     const [
         createUserWithEmailAndPassword,
@@ -37,9 +38,10 @@ const Register = () => {
                 <input type="text" name='name' placeholder='Your Name' />
                 <input type="email" name='email' placeholder='Email address' required />
                 <input type="password" name='password' placeholder='Password' required />
-                <input className='bg-primary text-white' type="submit" value="Register" />
+                <input style={{ height: '40px' }} className='bg-primary text-white d-block mx-auto w-50' type="submit" value="Register" />
             </form>
             <p>Already have an account? <Link to="/login" className='text-info text-decoration-none  ' onClick={navigateLogin}>Please Login</Link></p>
+            <GoogleLogin></GoogleLogin>
         </div>
     );
 };

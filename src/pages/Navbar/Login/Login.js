@@ -4,6 +4,7 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import GoogleLogin from './GoogleLogin/GoogleLogin';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -53,11 +54,11 @@ const Login = () => {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
-                <Button variant="primary" type="submit">
-                    Submit
-                </Button>
+                <input style={{ height: '40px' }} className='bg-primary text-white w-50 d-block mx-auto' type="submit" value="Login" />
             </Form>
             <p>Are your new? <Link to="/register" className='text-info text-decoration-none  ' onClick={navigateRegister}>Please Register</Link></p>
+
+            <GoogleLogin></GoogleLogin>
         </div>
     );
 };
