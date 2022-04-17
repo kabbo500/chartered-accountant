@@ -6,7 +6,11 @@ import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 import GoogleLogin from './GoogleLogin/GoogleLogin';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Login = () => {
     const emailRef = useRef('');
@@ -25,6 +29,10 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
+    if (loading || sending) {
+        return <Loading></Loading>
+    }
 
     if (user) {
         navigate(from, { replace: true });
@@ -50,8 +58,13 @@ const Login = () => {
 
     const resetPassword = async () => {
         const email = emailRef.current.value;
-        await sendPasswordResetEmail(email);
-        alert('Sent email');
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        }
+        else {
+            toast('Please enter your email address');
+        }
     }
 
     return (
@@ -71,9 +84,10 @@ const Login = () => {
             {errorElement}
 
             <p>Are your new? <Link to="/register" className='text-info text-decoration-none  ' onClick={navigateRegister}>Please Register</Link></p>
-            <p>Forget password? <Link to="/register" className='text-info text-decoration-none  ' onClick={resetPassword}>Reset password</Link></p>
+            <p>Forget password? <button className='btn btn-link text-info   ' onClick={resetPassword}>Reset password</button></p>
 
             <GoogleLogin></GoogleLogin>
+            <ToastContainer />
         </div>
     );
 };

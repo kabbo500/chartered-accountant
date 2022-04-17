@@ -2,6 +2,7 @@ import React from 'react';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../../firebase.init';
+import Loading from '../../../Shared/Loading/Loading';
 
 
 const GoogleLogin = () => {
@@ -10,6 +11,10 @@ const GoogleLogin = () => {
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
     let errorElement;
+
+    if (loading) {
+        return <Loading></Loading>
+    }
 
     if (error) {
 
