@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import './Service.css'
 const Service = ({ service }) => {
 
     const { id, img, name, price, description } = service
@@ -11,7 +11,7 @@ const Service = ({ service }) => {
         navigate(`/service/${id}`)
     }
     return (
-        <div className='col-12 col-md-6 col-lg-4 g-4'>
+        <div className='service col col-12  col-md-6 col-lg-4 g-4'>
             <div class="card " style={{ width: "18rem" }}>
                 <img src={img} class="card-img-top" alt="..." />
                 <div class="card-body">

@@ -1,0 +1,7 @@
+@media screen and (max-width:576px) {
+    .service {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

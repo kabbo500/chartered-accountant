@@ -3,8 +3,8 @@ import './Banner.css'
 const Banner = () => {
     return (
         <div>
-            <div className='mt-2' style={{
-                backgroundImage: "url(" + "https://www.linkpicture.com/q/43398.jpg" + ")",
+            <div className='mt-1' style={{
+                backgroundImage: "url(" + "https://www.linkpicture.com/q/1910.i201.036.taxes-accounting-icometric.jpg" + ")",
                 backgroundPosition: 'center',
                 height: '400px',
                 backgroundSize: 'cover',
@@ -16,8 +16,8 @@ const Banner = () => {
                         <h1>
                             Ahosanul S. Islam
                         </h1>
-                        <p>B.Com., ACA</p>
-                        <h2>Chartered Accountant</h2>
+                        <h5 className='justify-content-center d-flex text-primary'>(B.Com., ACA)</h5>
+                        <h2 className='justify-content-center d-flex '>Chartered Accountant</h2>
                     </div>
                 </div>
             </div>
