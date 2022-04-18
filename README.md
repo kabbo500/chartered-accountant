@@ -1,3 +1,32 @@
+# All details about this project
+
+1. Project's name : independent-service-provider-kabbo500
+
+2. Live website link: [https://independent-service-prov-1f6b5.web.app/]
+
+
+# Everything I am doing in this projects
+
+* First create a navbar and set all important route.
+
+* Then build a json file and load all accountant service.
+
+* Thirdly Create a private Checkout route for service checkout.
+
+* Then Create Login and register form for email, password login and Google sign in.
+
+* Fifthly Ans the three question in blogs page.
+
+* Last write myself and my future goal in about page.
+
+# Technologies use in this projects
+
+1. react router
+2. react bootstrap
+3. firebase
+4. react router hooks
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
