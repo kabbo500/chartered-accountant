@@ -38,7 +38,7 @@ const GoogleLogin = () => {
             </div>
             {errorElement}
             <div>
-                <button onClick={() => signInWithGoogle()} className='btn btn-primary d-block mx-auto w-50'><img src="https://www.linkpicture.com/q/kisspng-google-logo-google-search-google-now-5b1dacc1ad0462.3234288415286714257087-1.png" alt="" /> Google Sign In</button>
+                <button onClick={() => signInWithGoogle()} className='btn btn-primary d-block mx-auto w-50 mt-3'><img src="https://www.linkpicture.com/q/kisspng-google-logo-google-search-google-now-5b1dacc1ad0462.3234288415286714257087-1.png" alt="" /> Google Sign In</button>
             </div>
         </div>
     );

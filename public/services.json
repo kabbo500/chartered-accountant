@@ -3,42 +3,42 @@
         "id": 1,
         "name": "Accounting",
         "price": "300",
-        "description": "lorem",
+        "description": "Accounting services provide varying degrees of payroll services that include preparing payroll,",
         "img": "https://www.linkpicture.com/q/man-analysis-business-accounting-laptop-45719380.jpg"
     },
     {
         "id": 2,
         "name": "Audit Services",
         "price": "250",
-        "description": "lorem",
+        "description": "The audit services in Spain is critical and systematic examination done by one person",
         "img": "https://www.linkpicture.com/q/audit-business-concept-auditor-compliance-virtual-screen-technology-130287911.jpg"
     },
     {
         "id": 3,
         "name": "Income Tax",
         "price": "310",
-        "description": "lorem",
+        "description": "Prepare or assist in preparing simple to complex tax returns for individuals or small businesses",
         "img": "https://www.linkpicture.com/q/istockphoto-1178314435-612x612.jpg"
     },
     {
         "id": 4,
         "name": "Corporate Service",
         "price": "280",
-        "description": "lorem",
+        "description": "Tax, legal and developments increasingly impact on business operations.",
         "img": "https://www.linkpicture.com/q/Corporate-Services.png"
     },
     {
         "id": 5,
         "name": "Corporate Finance",
         "price": "340",
-        "description": "lorem",
+        "description": "Corporate finance departments are charged with governing and overseeing their firms",
         "img": "https://www.linkpicture.com/q/global-project-finance-corporate-finance.jpg"
     },
     {
         "id": 6,
         "name": "GST",
         "price": "325",
-        "description": "lorem",
+        "description": " GST are categorized under the SAC (Services Accounting Code) Code System",
         "img": "https://www.linkpicture.com/q/goods-services-tax-gst-concept-words-written-color-notes-office-supplies-business-top-view-115093938.jpg"
     }
 ]

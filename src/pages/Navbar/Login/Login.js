@@ -84,7 +84,7 @@ const Login = () => {
             {errorElement}
 
             <p>Are your new? <Link to="/register" className='text-info text-decoration-none  ' onClick={navigateRegister}>Please Register</Link></p>
-            <p>Forget password? <button className='btn btn-link text-info   ' onClick={resetPassword}>Reset password</button></p>
+            <p>Forget password? <button className='btn btn-link text-info text-decoration-none  ' onClick={resetPassword}>Reset password</button></p>
 
             <GoogleLogin></GoogleLogin>
             <ToastContainer />

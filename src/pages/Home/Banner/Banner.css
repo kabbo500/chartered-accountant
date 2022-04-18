@@ -13,3 +13,11 @@
     color: darksalmon;
     margin-top: 0px;
 }
+
+@media screen and (max-width:576px) {
+    .name h1 {
+        font-weight: 600;
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+}
