@@ -1,0 +1,11 @@
+.checkout-btn {
+    display: flex;
+    justify-content: center;
+
+}
+
+.checkout-btn button {
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}

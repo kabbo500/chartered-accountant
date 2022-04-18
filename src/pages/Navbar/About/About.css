@@ -1,0 +1,23 @@
+.goal-heading {
+    display: flex;
+    justify-content: center;
+
+}
+
+.goals {
+    display: flex;
+    justify-content: center;
+
+}
+
+.goals ul {
+    border: 2px solid lightgray;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 8px;
+
+}
+
+.goals li {
+    padding: 5px;
+}
