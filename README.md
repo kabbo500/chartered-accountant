@@ -7,17 +7,10 @@
 
 # Everything I am doing in this projects
 
-* First create a navbar and set all important route.
+*  It has two authentication systems, Google & email, and pass 
+* Password reset and email verification system 
+* Checkout page with the private route 
 
-* Then build a json file and load all accountant service.
-
-* Thirdly Create a private Checkout route for service checkout.
-
-* Then Create Login and register form for email, password login and Google sign in.
-
-* Fifthly Ans the three question in blogs page.
-
-* Last write myself and my future goal in about page.
 
 # Technologies use in this projects
 
